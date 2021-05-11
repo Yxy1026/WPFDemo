@@ -1,0 +1,98 @@
+﻿<Page x:Class="FaceSystem.View.Read_IdCardInfo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FaceSystem.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1024" DataContext="{Binding IDCardData, Source={StaticResource Locator}}"
+      Title="Read_IdCardInfo">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="..\Resources\Background.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Margin="20">
+            <Grid Width="800" Height="300" Background="White" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" Background="#95b9f4" Margin="20">
+                    <Image x:Name="tb_photo" Stretch="Fill" />
+                </Border>
+
+                <Border Grid.Column="1">
+                    <Grid x:Name="grid_idCard">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="35"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Border>
+                            <StackPanel Orientation="Horizontal">
+                                <!--<Image HorizontalAlignment="Left" Margin="10,0,0,0" Source="Image/员工管理.png"  Width="32" VerticalAlignment="Center"/>-->
+                                <TextBlock Text="身份证信息" Margin="5,0" Foreground="#232d2f" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+                            </StackPanel>
+                        </Border>
+                        <Border Grid.Row="1" Margin="0,0,0,20" >
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <Label  Grid.Row="0" Grid.Column="0" Content="姓名" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,8"></Label>
+                                <Label  Grid.Row="0" Grid.Column="1" Name="tb_name"  Content=""   FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,8"></Label>
+
+                                <Label  Grid.Row="0" Grid.Column="3" Content="性别" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,8"></Label>
+                                <Label  Grid.Row="0" Grid.Column="4"  Name="tb_sex" Content="" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,8"></Label>
+
+                                <Label  Grid.Row="1" Grid.Column="0" Content="民族" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,8"></Label>
+                                <Label  Grid.Row="1" Grid.Column="1" Content="" Name="tb_nation"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,8"></Label>
+
+                                <Label  Grid.Row="1" Grid.Column="3" Content="出生日期" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,8"></Label>
+                                <Label  Grid.Row="1" Grid.Column="4" Name="tb_birth" Content="" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,8"></Label>
+
+                                <Label  Grid.Row="2" Grid.Column="0" Content="身份证号" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,8"></Label>
+                                <Label  Grid.Row="2" Grid.Column="1" Name="tb_id" Content="" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,8"></Label>
+
+                                <Label  Grid.Row="2" Grid.Column="3" Content="签发机关" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,8"></Label>
+                                <Label  Grid.Row="2" Grid.Column="4" Name="tb_sign"  Content="" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,8"></Label>
+
+                                <Label  Grid.Row="3" Grid.Column="0" Content="有效期限" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,8"></Label>
+                                <Label  Grid.Row="3" Grid.Column="1" Name="tb_effitivedate" Content="" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,8"></Label>
+
+                                <Label  Grid.Row="4" Grid.Column="0" Content="住址" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,8"></Label>
+                                <Label  Grid.Row="4" Grid.Column="1"  Name="tb_address" Margin="20,0" Grid.ColumnSpan="4" Content="" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left"  ></Label>
+
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+        <Border Grid.Row="1">
+            <StackPanel  x:Name="Prompt" Height="26" Width="300"   VerticalAlignment="Top" Background="SandyBrown">
+                <TextBlock Text="请稍等，正在打开人证比对窗口" Foreground="White" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            </StackPanel>
+        </Border>
+        <Frame Grid.Row="1" x:Name="PageContext"  NavigationUIVisibility="Hidden" Visibility="Collapsed" />
+
+    </Grid>
+
+</Page>

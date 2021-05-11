@@ -1,0 +1,72 @@
+Got Exception!
+	Message: 无法加载 DLL“WisFaceEngineWrap.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+	InnerException: 
+	Source: QSFaceEngine4Net
+	TargetSite: Int32 QsEngineCppProcess(IntPtr, Byte[], Int32, Int32, Int32, FaceModel[], Int32)
+	StackTrace:    在 QSNetFaceLib.QSNetFaceEngine.QsEngineCppProcess(IntPtr handle, Byte[] image, Int32 width, Int32 height, Int32 pitch, FaceModel[] results, Int32 faceNum)
+   在 QSNetFaceLib.QSNetFaceEngine.detectFaces(String imgFileName, FaceModel[] faces, Int32 count)
+	Time: 2020/10/15 10:53:23
+
+Got Exception!
+	Message: 无法加载 DLL“WisFaceEngineWrap.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+	InnerException: 
+	Source: QSFaceEngine4Net
+	TargetSite: Int32 QsEngineCppProcess(IntPtr, Byte[], Int32, Int32, Int32, FaceModel[], Int32)
+	StackTrace:    在 QSNetFaceLib.QSNetFaceEngine.QsEngineCppProcess(IntPtr handle, Byte[] image, Int32 width, Int32 height, Int32 pitch, FaceModel[] results, Int32 faceNum)
+   在 QSNetFaceLib.QSNetFaceEngine.detectFaces(String imgFileName, FaceModel[] faces, Int32 count)
+	Time: 2020/10/15 10:53:23
+
+Got Exception!
+	Message: 无法加载 DLL“WisFaceEngineWrap.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+	InnerException: 
+	Source: QSFaceEngine4Net
+	TargetSite: Int32 QsEngineCppProcess(IntPtr, Byte[], Int32, Int32, Int32, FaceModel[], Int32)
+	StackTrace:    在 QSNetFaceLib.QSNetFaceEngine.QsEngineCppProcess(IntPtr handle, Byte[] image, Int32 width, Int32 height, Int32 pitch, FaceModel[] results, Int32 faceNum)
+   在 QSNetFaceLib.QSNetFaceEngine.detectFaces(String imgFileName, FaceModel[] faces, Int32 count)
+	Time: 2020/10/15 10:53:26
+
+Got Exception!
+	Message: 无法加载 DLL“WisFaceEngineWrap.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+	InnerException: 
+	Source: QSFaceEngine4Net
+	TargetSite: Int32 QsEngineCppProcess(IntPtr, Byte[], Int32, Int32, Int32, FaceModel[], Int32)
+	StackTrace:    在 QSNetFaceLib.QSNetFaceEngine.QsEngineCppProcess(IntPtr handle, Byte[] image, Int32 width, Int32 height, Int32 pitch, FaceModel[] results, Int32 faceNum)
+   在 QSNetFaceLib.QSNetFaceEngine.detectFaces(String imgFileName, FaceModel[] faces, Int32 count)
+	Time: 2020/10/15 10:53:26
+
+Got Exception!
+	Message: 无法加载 DLL“WisFaceEngineWrap.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+	InnerException: 
+	Source: QSFaceEngine4Net
+	TargetSite: Int32 QsEngineCppProcess(IntPtr, Byte[], Int32, Int32, Int32, FaceModel[], Int32)
+	StackTrace:    在 QSNetFaceLib.QSNetFaceEngine.QsEngineCppProcess(IntPtr handle, Byte[] image, Int32 width, Int32 height, Int32 pitch, FaceModel[] results, Int32 faceNum)
+   在 QSNetFaceLib.QSNetFaceEngine.detectFaces(String imgFileName, FaceModel[] faces, Int32 count)
+	Time: 2020/10/15 10:53:29
+
+Got Exception!
+	Message: 无法加载 DLL“WisFaceEngineWrap.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+	InnerException: 
+	Source: QSFaceEngine4Net
+	TargetSite: Int32 QsEngineCppProcess(IntPtr, Byte[], Int32, Int32, Int32, FaceModel[], Int32)
+	StackTrace:    在 QSNetFaceLib.QSNetFaceEngine.QsEngineCppProcess(IntPtr handle, Byte[] image, Int32 width, Int32 height, Int32 pitch, FaceModel[] results, Int32 faceNum)
+   在 QSNetFaceLib.QSNetFaceEngine.detectFaces(String imgFileName, FaceModel[] faces, Int32 count)
+	Time: 2020/10/15 10:53:29
+
+Got Exception!
+	Message: 无法加载 DLL“WisFaceEngineWrap.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+	InnerException: 
+	Source: QSFaceEngine4Net
+	TargetSite: Int32 QsEngineCppProcess(IntPtr, Byte[], Int32, Int32, Int32, FaceModel[], Int32)
+	StackTrace:    在 QSNetFaceLib.QSNetFaceEngine.QsEngineCppProcess(IntPtr handle, Byte[] image, Int32 width, Int32 height, Int32 pitch, FaceModel[] results, Int32 faceNum)
+   在 QSNetFaceLib.QSNetFaceEngine.detectFaces(String imgFileName, FaceModel[] faces, Int32 count)
+	Time: 2020/10/15 10:53:32
+
+Got Exception!
+	Message: 无法加载 DLL“WisFaceEngineWrap.dll”: 找不到指定的模块。 (异常来自 HRESULT:0x8007007E)。
+	InnerException: 
+	Source: QSFaceEngine4Net
+	TargetSite: Int32 QsEngineCppProcess(IntPtr, Byte[], Int32, Int32, Int32, FaceModel[], Int32)
+	StackTrace:    在 QSNetFaceLib.QSNetFaceEngine.QsEngineCppProcess(IntPtr handle, Byte[] image, Int32 width, Int32 height, Int32 pitch, FaceModel[] results, Int32 faceNum)
+   在 QSNetFaceLib.QSNetFaceEngine.detectFaces(String imgFileName, FaceModel[] faces, Int32 count)
+	Time: 2020/10/15 10:53:32
+

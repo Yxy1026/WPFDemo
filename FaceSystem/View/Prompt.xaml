@@ -1,0 +1,43 @@
+﻿<Page x:Class="FaceSystem.View.Prompt"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      xmlns:local="clr-namespace:FaceSystem.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1024"
+      Title="Prompt">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="..\Resources\Background2.jpg"/>
+        </Grid.Background>
+        <Border Width="900" Height="600" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20">
+            <Grid Name="grid_IndexWrap">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="800"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Background="White" Margin="20">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock Text="请将二代身份证放在身份证识别器上" FontSize="40"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Image gif:ImageBehavior.AnimatedSource="..\Resources\prompt.gif" Margin="0,36,54,0"  ></Image>
+                        </Grid>
+
+                    </Grid>
+
+                </Border>
+               
+            </Grid>
+        </Border>
+        <Frame Grid.Row="1" x:Name="PageContext"  NavigationUIVisibility="Hidden" Visibility="Collapsed" />
+    </Grid>
+</Page>

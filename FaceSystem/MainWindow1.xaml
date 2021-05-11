@@ -1,0 +1,159 @@
+﻿<Window x:Class="FaceSystem.MainWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FaceSystem"
+        mc:Ignorable="d"
+        Title="校园综合服务自助一体机V1.0" Height="720" Width="1024">
+   
+        <Border BorderBrush="#334d5c" BorderThickness="1" CornerRadius="0" >
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources\Background2.jpg"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                
+            </Grid.RowDefinitions>
+
+            <!--页头-->
+            <Border>
+                <Grid Background="#ffff">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition  Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Orientation="Horizontal">
+                        <!--<Image HorizontalAlignment="Left" Margin="10,0,0,0" Source="Images/logo.jpg"  Width="48" Height="48" VerticalAlignment="Center"/>-->
+                        <TextBlock x:Name="lal_AppName" Text="校园综合服务自助一体机V1.0" Margin="15,5,0,0" Foreground="Black" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+
+                        <Button Grid.Column="5" Background="#1773e9"  x:Name="Btn_Main" Visibility="Collapsed"   Foreground="#FFFFFF"  Template="{DynamicResource btn_UI}" Click="Btn_Vrs_Click">
+                            <Button.Content>
+                                <StackPanel Orientation="Horizontal"  Width="80" >
+                                    <Label Content="首页"  VerticalAlignment="Bottom"   Margin="15,40,0,0" FontSize="20" Foreground="#FFFFFF" ></Label>
+                                </StackPanel>
+                            </Button.Content>
+                        </Button>
+                        
+                        <!--<Button x:Name="Btn_Close" Grid.Column="5" Background="#5883e0"   Margin="10,0"  Foreground="#FFFFFF"  Template="{DynamicResource btn_UI}" Tag="View/Pages/Page_System.xaml" Click="btn_Close_Click"   >
+                            <Button.Content>
+                                <StackPanel Orientation="Horizontal" Margin="15,0">
+                                    <Label Content="首页" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Foreground="#FFFFFF" ></Label>
+                                </StackPanel>
+                            </Button.Content>
+                        </Button>-->
+                        
+                    </StackPanel>
+                    <Grid Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <!--<TextBlock Text="13:13" FontSize="30" Margin="0,0,20,10"  x:Name="Time" ></TextBlock>
+                        <TextBlock Grid.Row="2" FontSize="15" Text="02月08日 星期一" Margin="0,0,10,10" x:Name="week" ></TextBlock>-->
+
+                    </Grid>
+                    
+                </Grid>
+            </Border>
+            
+            <!--内容-->
+            <Grid Grid.Row="1" >
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <Grid Grid.Row="0" Margin="5,5" Name="grid_IndexWarp" >
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="2"  Grid.Column="1" >
+                            <Button x:Name="Btn_Register" FontSize="25" Background="#1773e9" Width="250" Height="100" Margin="10,0"  Foreground="#FFFFFF"  Tag="View/Prompt.xaml" Click="Btn_Register_Click" HorizontalAlignment="Right">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}" >
+                                        <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="7,7,7,7">
+                                            <Border.Background>#1773e9</Border.Background>
+                                            <ContentPresenter Content="自助报到"   HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50,0,0,0" ></ContentPresenter>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid  Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="2" Grid.Column="1" >
+                            <Button x:Name="Btn_Inquire" FontSize="25" Width="250" Height="100" Margin="10,0"  Foreground="#FFFFFF"  Tag="View/Prompt.xaml"  Click="Btn_Inquire_Click" HorizontalAlignment="Left">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}" >
+                                        <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="1" CornerRadius="7,7,7,7">
+                                            <Border.Background>#D95238</Border.Background>
+                                            <ContentPresenter Content="自助打印"   HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50,0,0,0" ></ContentPresenter>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+         
+                </Grid>
+                
+                <Grid Background="white" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="40" Height="40" Source="Resources/GG.png"></Image>
+                    <TextBlock Grid.Column="1" Margin="20,0,0,0" Text="欢迎您使用校园综合服务自助一体机" VerticalAlignment="Center" FontSize="20" ></TextBlock>
+                </Grid>
+            </Grid>
+            <Frame Grid.Row="1" x:Name="PageContext"  NavigationUIVisibility="Hidden" Visibility="Collapsed" />
+            <!--<Border Grid.Row="2">
+                <Grid Background="white">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="1" Text="欢迎您使用市场监督管理局自助服务终端" VerticalAlignment="Center" FontSize="20" ></TextBlock>
+                </Grid>
+            </Border>-->
+        </Grid>
+    </Border>
+    
+</Window>

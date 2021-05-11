@@ -1,0 +1,57 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:local="clr-namespace:FaceSystem.View"
+              ColumnWidth="400" FontSize="14" FontFamily="宋体">
+
+    <Section>
+        <Paragraph TextAlignment="Center" FontSize="25" Margin="0">
+            <Bold>大连民族大学成绩单</Bold>
+        </Paragraph>
+        <Paragraph TextAlignment="Center">
+            Dalian Minzu University Student's Academic Transcript
+        </Paragraph>
+    </Section>
+    <Table FontSize="10" TextAlignment="Center">
+        <Table.Columns>
+            <TableColumn Width="33*"/>
+            <TableColumn Width="33*"/>
+            <TableColumn/>
+        </Table.Columns>
+        <TableRowGroup Name="studentInfo"></TableRowGroup>
+    </Table>
+    <Table FontSize="9" TextAlignment="Center" BorderBrush="Black" BorderThickness="1">
+        <Table.Columns>
+            <TableColumn Width="8*" />
+            <TableColumn Width="24*" />
+            <TableColumn Width="4*" />
+            <TableColumn Width="4*" />
+            <TableColumn Width="4*" />
+            <TableColumn Width="6*" />
+        </Table.Columns>
+        <TableRowGroup Name="rowsDetails">
+            <TableRowGroup.Background>
+                <ImageBrush ImageSource="/Resources/YinZhang.png" Stretch="None" AlignmentX="Right" AlignmentY="Bottom">
+                    
+                </ImageBrush>
+            </TableRowGroup.Background>
+            <TableRow FontWeight="Bold">
+                <TableCell>
+                    <Paragraph>课程号</Paragraph>
+                </TableCell>
+                <TableCell>
+                    <Paragraph>课程名称</Paragraph>
+                </TableCell>
+                <TableCell>
+                    <Paragraph>学分</Paragraph>
+                </TableCell>
+                <TableCell>
+                    <Paragraph>成绩</Paragraph>
+                </TableCell>
+                <TableCell>
+                    <Paragraph>课类型</Paragraph>
+                </TableCell>
+            </TableRow>
+
+        </TableRowGroup>
+    </Table>
+ 
+</FlowDocument>
